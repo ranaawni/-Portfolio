@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+} 
+body {
+	background-color: #f8f9fa;
+}
+
+ #navbar #position {
+	margin-top: 70px;
+	margin-left: -170px;
+
+}
+
+#navbar {
+	margin-left: 400px;
+
+}
+
+#navbarNav {
+	margin-left: 150px;
+	margin-top: 70px;
+}
+
+#profile {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+#greating {
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+
+
+#navinfo{
+  margin-top: -90px;
+}
+#info {
+   margin-left:500px; 
+   margin-top: -80px;
+
+
+}
+#resume {
+	background-color:#fa5555;
+	border-radius: 15px 50px 30px; 
+	padding: 20px;
+    width: 200px;
+    height: 150px;
+
+}
+
+#work{
+	background-color:#4fb2bd;
+	border-radius: 15px 50px 30px; 
+	margin-left: 50px;
+	padding: 20px;
+    width: 200px;
+    height: 150px;
+
+}
+
+#skill {
+	background-color:#e0db3d;
+	border-radius: 15px 50px 30px;
+	margin-left: 50px;
+	padding: 20px;
+    width: 200px;
+    height: 150px;
+
+}
+
+.pinfo {
+	text-align: center;
+	margin-top: 40px;
+}
