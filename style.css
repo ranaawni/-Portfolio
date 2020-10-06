@@ -78,3 +78,33 @@ body {
 	text-align: center;
 	margin-top: 40px;
 }
+
+.awsome {
+	margin-left: 800px;
+}
+
+footer {
+   /*position: fixed;*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 70px;
+   background-color:#fa5555;
+}
+
+.fa-phone{
+	display: inline-block;
+	background-color:#4fb2bd; 
+}
+
+#plus {
+    display: inline-block;
+	margin-left: 100px;
+	margin-top: -200px;
+	background-color:#4fb2bd;
+}
+
+footer {
+	display: block;
+	height: 100px;
+}
