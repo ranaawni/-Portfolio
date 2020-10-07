@@ -108,3 +108,19 @@ footer {
 	display: block;
 	height: 100px;
 }
+
+.fa-github {
+	background-color:#4fb2bd;
+	border-radius: 10px;
+	padding: 3px;
+	color: black;
+
+
+}
+
+.fa-linkedin-in {
+	background-color:#4fb2bd;
+	border-radius: 10px;
+	padding: 3px;
+	color: black;
+}
