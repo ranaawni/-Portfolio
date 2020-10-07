@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	  <script src="https://kit.fontawesome.com/5ee2fb3ce3.js" crossorigin="anonymous"></script>
@@ -10,7 +10,8 @@
 	<title>Portfolio</title>
 </head>
 <body>
-<!--nav bar section --->
+
+	<!--nav bar section --->
 	<section id="navbar">
 <nav id = "mainnav" class="navbar navbar-expand-lg navbar-light bg-light">
 	<span style="font-weight: bold;">
@@ -41,39 +42,43 @@
 </nav>
 </section>
 
-<section id="bodySection">
+<!--------- Form for Contact ------------>
 
-	<div class="row">
-  <div class="col-9">
-  	<h1 style="font-weight: bold;">LATEST PROJECTS</h1>
-  	<hr>
-  </div>
-  <div class="col-4" style="margin-top: 20px;">
-  	<img id="imgcompany" src="./images/programmin.jpg" width="300px">
-  </div>
-  <div id="companyHover" class="col-6" style="margin-top: 30px;"><p id="infoCompany"><span style="font-weight: bold;">Training Company Website</span><br><span>This is website for training company and inside the website there is the names of courses </span></p></div>
-</div>
-
-
-<div class="row">
-  <div class="col-9">
-  	<hr>
-  </div>
-  <div class="col-4" style="margin-top: 20px;">
-  	<img id="imguni" src="./images/university.jpg" width="300px">
-  </div>
-  <div id="universityHover"  class="col-6" style="margin-top: 30px;"><p id="infoUni"><span style="font-weight: bold;">University Website</span><br><span >This is Website for University have some information about this University.</span></p>
-  </div>
-</div>
+<section id="contactME">
+    <h1>Contact Me</h1>
+    <p id="contact">Looking forward to answering your email</p>
+    
+    <form>
+	      <div class="field name-box">
+	        <input type="text" id="name" placeholder="Who Are You?"/>
+        	<label for="name">Name</label>
+	      </div>
  
+	      <div class="field email-box">
+	        <input type="text" id="email" placeholder="name@email.com"/>
+	        <label for="email">Email</label>
+	      </div>
  
+	      <div class="field msg-box">
+	        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+	        <label for="msg">Msg</label>
+	      </div>
+ 
+	      <input class="button" type="submit" value="Send" />
+  </form>
 </section>
 
 
- 
-	
 
- <!----------- Footer Section ---------------------->
+
+
+
+
+
+
+
+
+<!----------- Footer Section ---------------------->
 <section>
 
 	<footer>
@@ -132,7 +137,6 @@
 
 </section>
 
-
 <!--------------- Links for JQuery and Bootstrap--------------------------->
 
 
@@ -140,5 +144,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="main.js"></script>
+
+
 </body>
 </html>

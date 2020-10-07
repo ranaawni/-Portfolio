@@ -2,61 +2,75 @@ console.log("connect");
 
 
 $( document ).ready(function() {
+   //hide some paragraph at project.html 
+	$("#infoUni").hide();
+	$("#infoCompany").hide();
+
   $('.clickpro').click(function(){
    window.open("project.html", "_blank")
 });
   
+//open new tab when click on image at project.html
   $("#imgcompany").click(function(){
   	window.open("./mywork/Company Website/company.html", "_blank")
-  })
+  });
 
   $("#imguni").click(function(){
   	window.open("./mywork/University/university.html", "_blank")
-  })
+  });
 
-//   $('#cvimg').click(function(e) {
-//     e.preventDefault();  //stop the browser from following
-//     window.open("./mywork/Rana's CV1.pdf");
-// });
+//show text which I hide them in the beginning
+   $("#universityHover").mouseover(function(){
+   	$("#infoUni").show();
+   });
 
-var imgs = ["./images/programmin.jpg",
-            "./images/university.jpg"]
-    var cnt = imgs.length;
+   $("#companyHover").mouseover(function(){
+   	$("#infoCompany").show();
+   });
 
-    setInterval(forwardImage, 4000);
-
-
-//This function will find the key for the current Image
-function currentImageKey() {
-    i = jQuery.inArray($('#slideshow').attr('src'), imgs);
-    return i;
-}
-
-
-//This function will move the slideshow forward one
-function forwardImage() {
-    currentImageKey();
-    if (i < imgs.length - 1) {
-        changeImage(i + 1);
-    } else {
-        changeImage(0);
-    }
-}
-
-
-//This function will change to image to whatever the variable i passes to it
-function changeImage(i) {
-    $('#slideshow').stop().animate({
-        opacity: 0,
-    }, 200, function() {
-        $('#slideshow').attr('src', images[i]);
-        $('#holder img').load(function() {
-            $('#slideshow').stop().animate({
-                opacity: 1,
-            }, 200)
-        })
-    })
-}
-
+//when I click in any place outside textarea or input field
+$('textarea').blur(function () {
+    $('#contactME textarea').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('textarea + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('textarea + label + span').css({'opacity': 0});
+        }
+    });
+});
+ 
+$('#contactME .field:first-child input').blur(function () {
+    $('#contactME .field:first-child input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 0});
+        }
+    });
+});
+ 
+$('#contactME .field:nth-child(2) input').blur(function () {
+    $('#contactME .field:nth-child(2) input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+        }
+    });
+});
 
 });
+
+
